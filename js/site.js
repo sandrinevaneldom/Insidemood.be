@@ -362,6 +362,32 @@ function renderProject() {
   });
 }
 
+function bindPress() {
+  const shots = [...document.querySelectorAll(".press-zoom img")];
+  if (!shots.length) return;
+  const box = document.createElement("div");
+  box.className = "lightbox is-reader";
+  box.innerHTML = `<button class="lb-close" type="button" aria-label="Fermer">×</button><img alt="">`;
+  document.body.appendChild(box);
+  const view = box.querySelector("img");
+  const close = () => box.classList.remove("is-open");
+  shots.forEach((image) => {
+    image.closest(".press-zoom").addEventListener("click", () => {
+      view.src = image.src;
+      view.alt = image.alt;
+      box.classList.add("is-open");
+      box.scrollTop = 0;
+    });
+  });
+  box.querySelector(".lb-close").addEventListener("click", close);
+  box.addEventListener("click", (event) => {
+    if (event.target === box) close();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") close();
+  });
+}
+
 function bindContact() {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -514,6 +540,7 @@ mountChrome();
 renderHome();
 renderIndex();
 renderProject();
+bindPress();
 bindContact();
 bindProcess();
 bindFaq();

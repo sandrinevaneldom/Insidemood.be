@@ -209,6 +209,21 @@ const PROJECTS = [
     ],
   },
   {
+    id: "brasserie-des-copains",
+    title: "La Brasserie des Copains — Nivelles",
+    type: "Restaurant",
+    place: "Nivelles",
+    year: "",
+    cover: "chez-les-copains/01.png",
+    images: [
+      "chez-les-copains/01.png",
+      "chez-les-copains/02.png",
+      "chez-les-copains/03.png",
+    ],
+    featured: false,
+    text: [],
+  },
+  {
     id: "maison-namur",
     title: "Maison à Namur",
     type: "Maison",
@@ -286,16 +301,6 @@ const ONGOING = [
       "braine-alleud/01.png",
       "braine-alleud/02.png",
       "braine-alleud/03.png",
-    ],
-  },
-  {
-    title: "Chez les copains",
-    place: "Restaurant · Nivelles",
-    image: "",
-    images: [
-      "chez-les-copains/01.png",
-      "chez-les-copains/02.png",
-      "chez-les-copains/03.png",
     ],
   },
   {
