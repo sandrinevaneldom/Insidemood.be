@@ -259,6 +259,26 @@ const PROJECTS = [
     featured: false,
     text: [],
   },
+  {
+    id: "maison-paris",
+    title: "Maison — Paris",
+    type: "Maison",
+    place: "Paris",
+    year: "",
+    cover: "paris/cover.jpg",
+    images: [
+      "paris/cover.jpg",
+      "paris/02.png",
+      "paris/03.png",
+      "paris/04.png",
+      "paris/05.png",
+      "paris/06.png",
+      "paris/07.png",
+      "paris/08.png",
+    ],
+    featured: false,
+    text: [],
+  },
 ];
 
 const COMPARES = [

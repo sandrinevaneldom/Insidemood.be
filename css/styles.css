@@ -1421,22 +1421,40 @@ input:focus, textarea:focus { border-bottom-color: var(--gold-deep); }
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 41;
     background: transparent;
     color: var(--navy);
     border-color: var(--navy);
+  }
+  .nav:has(.nav-links.is-open) {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  .nav:has(.nav-links.is-open) .brand {
+    position: relative;
+    z-index: 41;
   }
   .nav-links {
     display: none;
     position: fixed;
     inset: 0;
-    background: var(--navy);
-    color: var(--ivory);
+    background: rgba(251, 249, 246, 0.78);
+    color: var(--navy);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
     flex-direction: column;
     justify-content: center;
     gap: 1.6rem;
     transform: none;
   }
-  .nav-links.is-open { display: flex; }
+  .nav-links.is-open { display: flex; z-index: 40; }
+  .nav-links.is-open:hover a,
+  .nav-links.is-open:focus-within a {
+    filter: none;
+    opacity: 1;
+  }
   .nav-links a { font-size: 1.3rem; letter-spacing: 0.22em; }
   .index-preview { position: static; }
   .index-list a { grid-template-columns: 2.2rem 1fr; }
