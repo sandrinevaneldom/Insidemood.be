@@ -265,7 +265,7 @@ const PROJECTS = [
     type: "Maison",
     place: "Paris",
     year: "",
-    cover: "paris/cover.jpg",
+    cover: "paris/02.png",
     images: [
       "paris/cover.jpg",
       "paris/02.png",
