@@ -101,22 +101,6 @@
       "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
     },
     {
-      "source": "/cines/02.png",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
-    },
-    {
-      "source": "/cines/03.png",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
-    },
-    {
-      "source": "/cines/04.png",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
-    },
-    {
-      "source": "/cines/cover.png",
-      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
-    },
-    {
       "source": "/cuisine-woluwe/01.png",
       "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
     },
